@@ -10,31 +10,32 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:baselineAligned="false"
-        android:divider="?android:attr/dividerHorizontal"
-        android:orientation="vertical"
+        android:divider="?android:attr/verticalDivider"
+        android:orientation="horizontal"
         android:weightSum="1"
-        android:padding="15dp"
+        android:padding="10dp"
         android:showDividers="middle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         >
 
         <fragment
             android:id="@+id/fragmento1"
-            android:layout_width="match_parent"
+            android:layout_width="120dp"
             android:layout_height="match_parent"
             android:name="com.example.ufgedufisamborientaciongabrielcampos.Fragmento1"
-            android:layout_weight="1"
-
             />
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="600dp"
+            android:layout_width="600dp"
+            android:layout_height="395dp"
             android:baselineAligned="false"
-            android:divider="?android:attr/dividerVertical"
-            android:orientation="horizontal"
+            android:divider="?android:attr/dividerHorizontal"
+            android:orientation="vertical"
             android:weightSum="2"
             android:padding="10dp"
             android:showDividers="middle"
+
 
             >
 
